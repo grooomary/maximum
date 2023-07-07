@@ -25,3 +25,10 @@ h1 {
     margin: 40px;
     padding: 20px;
 }
+
+.par-3 {
+    font-style: oblique;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 10px green;
+}
