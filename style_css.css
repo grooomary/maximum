@@ -1,0 +1,27 @@
+h1 {
+    background: darkred;
+}
+
+.par {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+
+}
+
+.par-1 {
+    color: darkred;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 700;
+
+}
+
+.par-2 {
+    color: darkblue;
+    font-size: 25px;
+    border: 4px solid darkblue;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 20px;
+}
