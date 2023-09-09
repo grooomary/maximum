@@ -33,7 +33,9 @@ class Advertisement(models.Model):
     @admin.display(description='Фото')
     def method_pict(self):
         if self.image:
-            return format_html(f'<img src="{models.ImageField}" style="height: 50px; width: 50px;">')
+            return format_html(
+                '<img src="{url}" style="max-width: 50px; max-height=50px;">', url=self.image.url
+            )
 
     class Meta:
         db_table = 'advertisements'
