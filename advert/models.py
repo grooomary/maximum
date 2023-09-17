@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 from django.utils.html import format_html
 
@@ -36,6 +37,9 @@ class Advertisement(models.Model):
             return format_html(
                 '<img src="{url}" style="max-width: 50px; max-height=50px;">', url=self.image.url
             )
+
+    def get_absolute_url(self):
+        return reverse('adv_detail', kwargs={'pk': self.pk})
 
     class Meta:
         db_table = 'advertisements'
